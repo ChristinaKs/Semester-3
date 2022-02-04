@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Omnivox - Vanier College</title>
+	<meta name="Description" content="Omnivox simplifies your life by integrating powerful communication tools.">
+	<meta name="keywords" content="Omnivox, Vanier College, Léa, the Omnivox Classroom, Mio">
+	
+
+	
+	
+
+	<link href="/Login/Content/BundlerMinifier/content/css/gen.min.css?v=637678592163302928" rel="stylesheet">
+
+</head>
+<body class="body-identification-intraflex  VAN PROD carousel-active"
+      >
+    
+        <div class="container-message-logout">
+            <div class="message-logout">
+                <img src="/Images/General/deconnexion.gif" class="img-message-logout" />
+                <div class="texte-message-logout"><strong>Signed out successfully</strong><br/>If you are on a public computer, please close your browser.</div>
+            </div>
+        </div>
+
+    
+    <div class="carousel-identification-sso"><div class="carousel-item-identification-sso visible enabled" style="opacity: 1; background-image:url('/Login/Content/Images/VAN/Carousel/1.jpg?t=637460613391684909');"></div><div class="carousel-item-identification-sso " style="opacity: 0; background-image:url('/Login/Content/Images/VAN/Carousel/2.jpg?t=637460613391714882');"></div><div class="carousel-item-identification-sso " style="opacity: 0; background-image:url('/Login/Content/Images/VAN/Carousel/3.jpg?t=637460613391754935');"></div><div class="carousel-item-identification-sso " style="opacity: 0; background-image:url('/Login/Content/Images/VAN/Carousel/4.jpg?t=637460613391794919');"></div></div>
+
+
+
+    <div class="identification-intraflex right">
+
+        
+        <div class="row header-identification-intraflex">
+            <div class="col s12">
+                <div class="header-title-identification-intraflex"><h1 class="title">Omnivox<div class="border"></div></h1><div class="subtitle"><a href="https://www.vaniercollege.qc.ca" target="_blank" rel="noopener">Vanier College</a></div></div>
+            </div>
+        </div>
+
+            <div class="row no-margin container-message-logout-mobile" style="display:none;">
+                <div class="offset-s1 s10 col"><div class="green card-panel lighten-4"><span class="green-text text-darken-4"><div class="row valign-wrapper"><div class="col s12"><i class="done_all material-icons small left hide-on-small-only"></i><h4 class="no-margin">Sign Out</h4></div></div><strong>Signed out successfully</strong><br/>If you are on a public computer, please close your browser.</span></div></div>		
+		    </div>
+        <div class="row contenu-identification-intraflex">
+            <div class="col s12 no-padding">
+                
+
+
+<div class="section-login">
+
+	
+	<!-- ONLOAD_MAIN -->
+	
+	<div class="container-roles nb-roles-2">
+			<a role="button" class="role role-2" id="role-2"
+				data-label-identifiant="Student number" 
+				data-placeholder-identifiant="0000000"
+				data-name-identifiant="NoDA"
+				data-is-maskable-identifiant="False"
+
+				data-label-password="Password"
+				data-placeholder-password="••••••••"
+				data-name-password="PasswordEtu"
+				data-type-utilisateur="Etudiant"
+				data-url-oubli-mdp="/intr/Module/Identification/OubliMotPasse.aspx?TypeUtilisateur=Etudiant"
+                data-text-oubli-mdp="Forgot your password?"
+				data-url-premiere-util="/intr/Module/Identification/?TypeUtilisateur=Etudiant"
+                aria-label="Type of identification : Students"
+                tabindex="0">
+				Students
+			</a>
+			<a role="button" class="role role-3" id="role-3"
+				data-label-identifiant="Username" 
+				data-placeholder-identifiant="00000"
+				data-name-identifiant="NoEmplEmployeNormal"
+				data-is-maskable-identifiant="True"
+
+				data-label-password="Password"
+				data-placeholder-password="••••••••"
+				data-name-password="PasswordEmplEmployeNormal"
+				data-type-utilisateur="EmployeNormal"
+				data-url-oubli-mdp="/intr/Module/Identification/OubliMotPasse.aspx?TypeUtilisateur=EmployeNormal"
+                data-text-oubli-mdp="Forgot your password?"
+				data-url-premiere-util="/intr/Module/Identification/?TypeUtilisateur=EmployeNormal"
+                aria-label="Type of identification : Employees"
+                tabindex="0">
+				Employees
+			</a>
+	</div>
+
+	<div id="section-form">
+        <form name="formLogin" autocomplete="on" id="formLogin" action="/intr/Module/Identification/Login/Login.aspx" method="post">
+
+<input id="StatsEnvUsersNbCouleurs" name="StatsEnvUsersNbCouleurs" type="hidden" value="" /><input id="StatsEnvUsersResolution" name="StatsEnvUsersResolution" type="hidden" value="" /><input id="k" name="k" type="hidden" value="637688295968491725" /><input id="TypeLogin" name="TypeLogin" type="hidden" value="PostSolutionLogin" />
+
+
+            <input id="TypeIdentification" name="TypeIdentification" type="hidden" value="" />
+            <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" />
+
+            <div class="row no-margin">
+                <div class="msg-erreur offset-s1 s10 col no-padding">
+                    
+                </div>
+            </div>
+
+            <div class="row no-margin">
+                <div class="offset-s1 s10 div-identifiant input-field col"><input autocomplete="off" data-length="255" data-val="true" data-val-skyrequired="The &#39;Identifiant&#39; field is required." data-val-skystringlength="Field &#39;&#39; must be between 0 and 255 characters long." data-val-skystringlength-maxlength="255" data-val-skystringlength-minlength="0" id="Identifiant" maxlength="255" name="Identifiant" type="text" value="" /><label for="Identifiant"></label><span class="field-validation-valid" data-valmsg-for="Identifiant" data-valmsg-replace="true"></span><div class="description"></div></div>
+                <div class="s4 div-suffixe-identifiant"></div>
+            </div>
+
+            <div class="row no-margin">
+                <div class="offset-s1 s10 input-field col"><input autocomplete="off" data-val="true" data-val-skyrequired="The &#39;Password&#39; field is required." id="Password" name="Password" type="password" /><label for="Password"></label><span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span><div class="description"></div></div>
+            </div>
+
+            <div class="row no-margin-right no-margin-left">
+                <div class="col s10 offset-s1">
+                    <button class="btn green darken-3 right recaptcha-trigger no-margin-right" type="submit">
+						<i class="material-icons right no-margin-left-on-med-and-down">navigate_next</i>
+                        <span>Log In</span>
+                    </button>
+                </div>
+            </div>
+
+                <div class="row no-margin">
+                    <div class="offset-s1 s10 col">
+                        <a class="lienUtil lien-premiere-util" href="#">First use?</a>
+                         <br />                                         
+                        <a class="lienUtil lien-oubli-mdp" href="#" target="_self"></a>
+                    </div>
+                </div>
+
+
+
+            <div class="row no-margin">
+                <div class="col s12">
+                    <div class="logo-client"></div>
+                </div>
+            </div>
+        </form>
+	</div>
+
+</div>
+
+
+            </div>
+        </div>
+
+
+            <div class="row no-margin-right no-margin-left">
+                <div class="col s12">
+                    <div class="lnk-langue">
+                        <a href="?L=FRA" title="Français">
+                            Français
+							<i class="material-icons">language</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="row footer-identification-intraflex">
+
+            <div class="col s12">
+
+                <ul class="center no-margin">
+                    <li>
+                        <a role="button" class="grey-text text-darken-2 modal-trigger" href="#modal-footer-securite">Security and Payment</a>
+                    </li>
+                    <li>
+                        <a role="button" class="grey-text text-darken-2 modal-trigger" href="#modal-footer-conditions">Usage Conditions</a>
+                    </li>
+                    <li>
+                        <a role="button" class="grey-text text-darken-2 modal-trigger" href="#modal-footer-apropos">Any Questions?</a>
+                    </li>
+
+                    <li>
+                        <p class="grey-text text-darken-2  no-margin-bottom">
+                            &copy; 2021
+                            <a class="grey-text text-darken-2" href="https://www.skytech.com/en/" target="_blank" rel="noopener">
+                                Skytech Communications
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div aria-labelledby="modal-footer-securite-label" aria-modal="true" class="fs-mobile modal-dialog modal" id="modal-footer-securite" role="dialog"><div class="modal-header"><h4 class="modal-title no-margin" id="modal-footer-securite-label">Security and Confidentiality</h4><button aria-label="Close" class="waves-effect waves-action-blue btn-icon action-blue modal-close tooltipped modal-x-btn" data-tooltip="Close" type="button"><i class="material-icons">close</i></button></div><div class="modal-content-wrapper"><div class="modal-content">
+<p class="no-margin-top">
+	The <span style='font-weight:bold;'>Omnivox Technology</span>, develop by <a href='https://www.skytech.com/en/' target='_blank' rel='noopener' style='font-weight:bold;'>Skytech Communications</a>, used by the Vanier College subscribes to very rigorous rules with regards to security and confidentiality. Every precaution has been taken so that the information pertaining to you is protected again any error, loss or unauthorized access.
+</p>
+
+<h5>Cryptography</h5>
+
+<p>
+	All of the operations carried out via Omnivox are encrypted in order to assure the confidentiality of the information circulating between Omnivox and you.
+</p>
+
+<h5>Firewall</h5>
+
+<p>
+	Access is controlled by several firewalls filtering access requests in order to identify and neutralize any unauthorized penetration attempt.
+</p>
+
+	<br />
+	<h4>Payment of fees via Omnivox</h4>
+	<p>
+		Omnivox simplifies the lives of students, teachers and employees of the College by integrating effective communication tools. Management of student records is greatly facilitated.<br><br>The Fee Payment service for example, allows to pay tuition fees easily. Once the payment is accepted by the bank, the balance is automatically adjusted in the student's file, simplifying the life of both the student and the college. Please note that no refund is offered for this transactions.
+	</p>
+	<p>
+		All payments made via Omnivox are in Canadian currency (CAD).
+	</p>
+	<p>
+		In case of error or technical problems, please contact the Vanier College at 514.744.7500 as soon as possible.
+	</p>
+	<p>
+		The cards accepted by Omnivox of Vanier College are:
+	</p>
+	<img src="/images/General/cc_mc_petit.gif" title="Mastercard" alt="Mastercard" />
+	<img src="/images/General/cc_visa_petit.gif" title="Visa" alt="Visa" />
+	<br />
+	<p>
+		Vanier College is located at:<BR>821, Sainte-Croix av.<br />Saint-Laurent, QC Canada<br/>H4L 3X9
+	</p>
+
+<br />
+
+<h4>Confidentiality Measures</h4>
+
+<h5>Closing the session</h5>
+
+<p>
+	It is important to close your session as soon as you are done using or when you must, in the course of using, leave for a moment.
+</p>
+
+
+<h5>Use of cookies</h5>
+
+<p>
+	Cookies are used in Omnivox. These files are used to identify you from one visit to the next and from one page to another within your work session in order to facilitate your access and browsing. Cookies can only be read by the Web site that transmits them to you.
+</p>
+
+<p>
+	The cookies used in Omnivox help to gather your browsing preferences and do not contain any other sensitive information.
+</p>
+
+<br />
+
+<h4>Supported browsers</h4>
+
+<p>
+	To achieve an optimal experience, we suggest using Omnivox with the following browsers:
+</p>
+
+<ul class="list-style-initial">
+	<li>Chrome (latest version)</li>
+	<li>Firefox (latest version)</li>
+	<li>Microsoft Edge (latest version)</li>
+	<li>Safari - For Mac (version 10+)</li>
+</ul>	
+
+</div></div><div class="modal-footer"><button class="waves-effect waves-action-blue btn-outlined modal-action modal-close modal-btn-cancel" type="button">Close</button></div></div>
+    <div aria-labelledby="modal-footer-conditions-label" aria-modal="true" class="fs-mobile modal-dialog modal" id="modal-footer-conditions" role="dialog"><div class="modal-header"><h4 class="modal-title no-margin" id="modal-footer-conditions-label">Usage Conditions</h4><button aria-label="Close" class="waves-effect waves-action-blue btn-icon action-blue modal-close tooltipped modal-x-btn" data-tooltip="Close" type="button"><i class="material-icons">close</i></button></div><div class="modal-content-wrapper"><div class="modal-content">
+
+
+	<h5 class="no-margin-top">Omnivox Password</h5>
+	<p>
+		You must select the password that you wish to use to access Omnivox. Your password must however respect certain constraints with the goal of maximizing the security that is offered to you. Make sure to select a password that you will easily remember but that will be hard for someone else to guess.
+	</p>
+	<p>
+		In order to protect your personal information, treat your Omnivox password with as much care as you do your bank PIN&nbsp;: do not divulge it to anyone, do not store it in your computer and do not write it down anywhere.
+	</p>
+	<p>
+		Correctly managing your password means maximizing its security and the security of your confidential information. You are personally responsible for the protection of your Omnivox password&nbsp;: we cannot be held responsible of any unauthorized access to your file or for the loss or damage resulting from unauthorized access to your file due to your negligence to protect your Omnivox password.
+	</p>
+<h5 class="no-margin-top">Unauthorized access</h5>
+
+<p>
+	It is expressly forbidden to access or to permit access to any Omnivox service for illegitimate ends. Will be considered as illegitimate:
+</p>
+
+<ul class="list-style-initial">
+	<li>Any fraudulent access using another person's identifier and their Omnivox without their explicit permission</li>
+	<li>Any attempt, regardless of the method, including any technological or computer methods, to obtain a user's password without their knowledge</li>
+</ul>
+
+<p>
+	Any attempt to access an account that is not your own constitutes fraudulent use liable to severe sanctions, including expulsion from your establishment. These sanctions are in addition to any other appropriate recourse in terms of civil or criminal law suits.
+</p>
+
+<h5>Restrictions pertaining to the use of content</h5>
+
+<p>
+	Other than for the usage purposes for which Omnivox is intended, it is strictly forbidden to reproduce any information, data, text, message or any other form of content presented via Omnivox by any means whatsoever.
+</p>
+
+<p>
+	It is therefore notably forbidden, without being limited by, to
+</p>
+
+<ul class="list-style-initial">
+	<li>Counterfeit or manipulate by any mean whatsoever any part of the Web site or of the Omnivox services</li>
+	<li>Download, post, transmit via email or by any other mean any information contained on Omnivox or its services to disseminate for illegitimate ends, and notably phishing</li>
+	<li>Download or transmit any content containing computer virus or any other computer code, file or program intended to interrupt, destroy or limit the functionalities of Omnivox or of the establisment's network.</li>
+	<li>Obstruct, perturb or use in an abusive fashion the services of Omnivox, its servers or the connected networks</li>
+	<li>Attempt to collect or save personal data pertaining to other users</li>
+</ul>
+
+<p>
+	Any infraction to these usage restrictions render the guilty party liable to severe sanctions including expulsion from Vanier College. These sanctions are in addition to any other appropriate recourse in terms of civil or criminal law suits.
+</p>
+
+<h5>Links to Web sites or third party services</h5>
+
+<p>
+	For your convenience, Omnivox proposes links to sites, third party sites or services, such as resource sites or pedagogical material. We have no control over the content or operation of these sites nor over their practices and their functioning.
+</p>
+
+<h5>Intellectual property of third parties</h5>
+
+<p class="no-margin-bottom">
+	Any user who puts online information using Omnivox must not infringe any copyright, any trademark and any other law, title or interest of intellectual property belonging to any third party. The user who puts content online using Omnivox must ensure that they obtain or possess the necessary rights allowing them among other to include on Omnivox any element (in part or whole) that is the intellectual property of another.
+</p>
+
+
+	<h5>About the Zoom platform</h5>
+	<p>
+		Léa's online classes are offered via Zoom, an external videoconferencing platform. Omnivox does not transfer personal information about you to this platform, but allows you to access the right class at the right time. Omnivox has no control over the availability, content and operation of this platform or over its practices and operation. You can consult the terms and conditions of use of this platform on the website of its manufacturer.
+	</p>
+
+
+</div></div><div class="modal-footer"><button class="waves-effect waves-action-blue btn-outlined modal-action modal-close modal-btn-cancel" type="button">Close</button></div></div>
+    <div aria-labelledby="modal-footer-apropos-label" aria-modal="true" class="fs-mobile modal-dialog modal" id="modal-footer-apropos" role="dialog"><div class="modal-header"><h4 class="modal-title no-margin" id="modal-footer-apropos-label">Any Questions?</h4><button aria-label="Close" class="waves-effect waves-action-blue btn-icon action-blue modal-close tooltipped modal-x-btn" data-tooltip="Close" type="button"><i class="material-icons">close</i></button></div><div class="modal-content-wrapper"><div class="modal-content"><p class="no-margin">
+	<b><i>In case of problems signing into the portal, please email <a href="mailto:portalsupport@vaniercollege.qc.ca">portalsupport@vaniercollege.qc.ca</a>.</b></i>
+</p></div></div><div class="modal-footer"><button class="waves-effect waves-action-blue btn-outlined modal-action modal-close modal-btn-cancel" type="button">Close</button></div></div>
+
+    <script type="text/javascript" src="/Login/Content/Partage/JavaScript/JQueryLatest/jquery.min.js?v=637678594867147667"></script><script type="text/javascript" src="/Login/Content/Partage/JavaScript/JQueryLatest/jquery-ui.min.js?v=637678594866053864"></script><script type="text/javascript" src="/Login/Content/BundlerMinifier/javascript/skytech.min.js?v=637568880320556524"></script><script type="text/javascript" src="/Login/Content/Partage/JavaScript/Bundles/validation-latest-bundle.min.js?v=637511835751631540"></script><script type="text/javascript" src="/Login/Content/BundlerMinifier/javascript/materialize.min.js?v=637642304081374703"></script><script type="text/javascript" src="/Login/Content/BundlerMinifier/javascript/modernizr.min.js?v=637511835746318869"></script><script type="text/javascript" src="/Login/Content/Partage/JavaScript/Bundles/communication-mobile-bundle.min.js?v=637642304082468491"></script><script type="text/javascript" src="/Login/Content/BundlerMinifier/javascript/module.min.js?v=637511835746475064"></script>
+
+    <script type="text/javascript">
+		
+		window.Login.Master.InitMaterial();
+		window.Login.Master.InitValidator();
+		window.Login.Master.InitAntiFormMultiSubmit();
+		window.Login.Master.InitDefaultActionOnEnter();
+
+		$(window).on("load", function () {
+			window.Login.Master.InitCarousel();
+                     window.Login.Master.InitVideo();
+
+
+		});
+
+    </script>
+
+
+    
+    <script type="text/javascript" src="/Login/Content/BundlerMinifier/javascript/module/loginIntraflex.min.js?v=637593916965553654"></script>
+    <script type="text/javascript">
+        var serverVariables = {
+            btnMaskIdentifiantActiveTitle: "Display the text of the [LABEL] field",
+            btnMaskIdentifiantInactiveTitle: "Hide the text of the [LABEL] field"
+        };
+
+		$('.role').on('click', Login.LoginIntraflex.RoleClick)
+		$('.role').on('keydown', function (e) {
+			if (e.which == 13) { // 13 = M.keys.ENTER
+				e.target.click();
+			}
+		});
+
+        Login.LoginIntraflex.InitializeLogin(false, serverVariables);
+    </script>
+
+
+
+
+
+        <script type="text/javascript">
+
+            
+            if (window.top.location.origin && window.top.location.href.toLowerCase().indexOf(window.top.location.origin.toLowerCase() + '/mobl') === 0) {
+                
+                $('document').ready(function () {
+                    setTimeout(function () {
+                        window.top.location = '/Mobl';
+                    }, 100);
+                });
+            } else {
+                
+                var userAgentFramePrincipalMobile = navigator.userAgent.indexOf("OVX") === 0;
+                var userAgentiFrameMobile = navigator.userAgent.indexOf("OVX") === navigator.userAgent.length - "OVX".length;
+                if (!userAgentFramePrincipalMobile && !userAgentiFrameMobile) {
+                    
+                    if (window.top.location != window.location && window.top.location.href.indexOf('/intr/UnitTest') < 0 && true)
+                        window.top.location = window.location;
+                } else {
+                    
+                    window.top.location = "/intr/Module/Identification/Login/Mobile/LoginMobile.aspx";
+                }
+            }
+            $('document').ready(function () {
+                if ($(window).width() > 910) {
+                    $(".container-message-logout").toggleClass("container-message-logout-animate");
+                    setTimeout(function () {
+                        $(".container-message-logout").toggleClass("container-message-logout-fade-out");
+                    }, 30250);
+                }
+                else {
+                    $(".container-message-logout-mobile").show();
+                }
+            });
+
+        </script>
+<iframe id="ifQuitterOvxEstd" src="https://vaniercollege-estd.omnivox.ca/estd/Term/?prvintr=endsession&C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterOvxEmpl" src="https://vaniercollege-empl.omnivox.ca/empl/Term/?prvintr=endsession&C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterClasseVirtuelle" src="https://www-van-ovx.omnivox.ca/cvir/SupprimerCookies.aspx?C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterEstd" src="https://vaniercollege-estd.omnivox.ca/estd/net/infosgenerales/SupprimerCookies.aspx?C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterEmpl" src="https://vaniercollege-empl.omnivox.ca/empl/net/infosgenerales/SupprimerCookies.aspx?C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterClaraFin" src="https://vaniercollege-servicesfinances.omnivox.ca/Account/LogOff?act=Omnivox&C=VAN&E=P&L=ANG&Ref=20211003031636" class="ifQuitter" height="0" width="0"></iframe><iframe id="ifQuitterReseau" src="https://skytech.omnivox.ca/intr/Module/Identification/Quitter.aspx" class="ifQuitter" height="0" width="0"></iframe>
+</body>
+</html>

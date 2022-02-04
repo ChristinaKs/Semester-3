@@ -1,0 +1,12 @@
+plug in hdd
+look in files youll see partitions
+to partition more use disks application on computer
+	can reconfigure, resize, relabel
+	empty space = autocreate new partition
+	click on existing one = is mounted
+	
+
+task is to familiarize with disk partitioning
+using disks app
+
+resize or remove
